@@ -24,10 +24,15 @@ public abstract class Persona//abstracto, no sabemos realmente que es, osea
     this.sexo = sexo;
     this.correo = correo;
   }
-  public void showData()//método mostrar datos(no abstracto)
+  protected void showData()//método mostrar datos(no abstracto)
   {
-    System.out.println("Datos de la personita");
-    
+    System.out.println("--->Datos de la personita<---");
+    System.out.println("Nombre: "+ this.nombre);
+    System.out.println("Edad: "+ this.edad);
+    System.out.println("Sexo: "+ this.sexo);
+    System.out.println("Correo: "+ this.correo);
   }
-
+  abstract protected void hablar();
+  //Una calse abastracta debe tener almenos un
+  //método abstracto
 }
