@@ -24,5 +24,20 @@ public class Alumno extends Persona implements Aprendiz
     this.carrera = carrera;
     this.grupo = grupo;
   }
-  //Tenemosque implementar los métodos abstractos de la clase padre
+  //Tenemosque implementar los métodos abstractos de la clase padre y sus métodos no abstractos
+  @Override
+  public void showData()
+  {
+    System.out.println("La personita en cuestion es un alumno");
+    super.showData();//desde la clase hija mandamos a imprimir de la clase padre
+    System.out.println("Matrícula: "+this.matricula);
+    System.out.println("Carrera: "+this.carrera);
+    System.out.println("Grupo: "+this.grupo);
+
+  }
+  @Override
+  public void hablar()//método abstracto
+  {
+    System.out.println("El alumno dice: Ya vamonos no?");
+  }
 }
