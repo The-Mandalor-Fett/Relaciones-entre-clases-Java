@@ -17,7 +17,7 @@ public abstract class Persona//abstracto, no sabemos realmente que es, osea
   protected int edad;
   protected String sexo;
   protected String correo;
-  public Persona()//constructor
+  public Persona(String nombre, int edad,String sexo, String correo)//constructor
   {
     this.nombre = nombre;
     this.edad = edad;
