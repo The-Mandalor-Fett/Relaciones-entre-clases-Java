@@ -40,4 +40,59 @@ public class Alumno extends Persona implements Aprendiz
   {
     System.out.println("El alumno dice: Ya vamonos no?");
   }
+
+    @Override
+    public void Saludar()
+    {
+
+    }
+
+    @Override
+    public void Preguntar()
+    {
+
+    }
+
+    @Override
+    public void Responder()
+    {
+
+    }
+
+    @Override
+    public void Participar()
+    {
+
+    }
+
+    @Override
+    public void Escuchar()
+    {
+
+    }
+
+    @Override
+    public void Despedirse()
+    {
+
+    }
+
+    @Override
+    public void Agradecer()
+    {
+
+    }
+
+    @Override
+    public void Ventanilla()
+    {
+
+    }
+
+    @Override
+    public void ResponderV()
+    {
+
+    }
+
 }
