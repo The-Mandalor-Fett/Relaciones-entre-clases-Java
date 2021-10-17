@@ -11,9 +11,9 @@ package personitas;
 public class Docente extends Persona implements Contribuyente
 {
   //colocamos sus propias variables
-  private String area
-  private String cargo
-  private int ident
+  private String area;
+  private String cargo;
+  private int ident;
   public Docente(String nombre,int edad, String sexo, String correo,String area,String cargo, int ident)
   {
     super(nombre,edad,sexo);
@@ -32,7 +32,55 @@ public class Docente extends Persona implements Contribuyente
   @Override
   protected void hablar()
   {
-    System.out.println("El profesor dice: Jovenes contesten que es para hoy");  
+    System.out.println("El profesor dice: Jovenes contesten que es para hoy");
   }
+
+    @Override
+    public void Saludar()
+    {
+
+    }
+
+    @Override
+    public void Instruye()
+    {
+
+    }
+
+    @Override
+    public void Despedida()
+    {
+
+    }
+
+    @Override
+    public void Interactua()
+    {
+
+    }
+
+    @Override
+    public void Contestar()
+    {
+
+    }
+
+    @Override
+    public void Agradecer()
+    {
+
+    }
+
+    @Override
+    public void Trabajar()
+    {
+
+    }
+
+    @Override
+    public void VentanillaR()
+    {
+
+    }
 
 }
