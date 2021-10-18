@@ -15,6 +15,7 @@ public interface Contribuyente
   public void Despedida();//Se despide ya sea de una autoridad o alumno
   public void Interactua();//Interactua con algo
   public void Contestar(Aprendiz aprendiz);//Contesta una pregunta a un alumno ventanilla contesta algo
-  public void Agradecer(Aprendiz aprendiz);//Agradece la atención
+  public void Agradecer();//Agradece la atención
   public void Trabajar();//La autoridad y profesor trabajan de forma distinta
+  public void Ventanilla(Aprendiz aprendiz);
 }

@@ -39,44 +39,51 @@ public class Docente extends Persona implements Contribuyente
     @Override
     public void Saludar()
     {
-
+      System.out.println("El docente saluda");
     }
 
     @Override
-    public void Instruye(Alumno alumno)
+    public void Instruye(Aprendiz aprendiz)
     {
-
+      System.out.println("El docente comienza a enseñar al alumno");
+      aprendiz.Escuchar();
     }
 
     @Override
     public void Despedida()
     {
-
+      System.out.println("El docente se despide");
     }
 
     @Override
     public void Interactua()
     {
-
+      System.out.println("El docente interactua con su computadora");
     }
 
     @Override
-    public void Contestar(Alumno alumno)
+    public void Contestar(Aprendiz aprendiz)
     {
-
+      System.out.println("El docente contesta la pregunta del alumno");
+      aprendiz.Agradece();
     }
 
     @Override
-    public void Agradecer(Alumno alumno)
+    public void Agradecer()
     {
+      System.out.println("Docente agradece");
 
     }
 
     @Override
     public void Trabajar()
     {
-
+      System.out.println("El profesor califica trabajos");
     }
-
+    public void Preguntar(Aprendiz aprendiz)
+    {
+      System.out.println("El profesor pregunta algo relacionado con el tema");
+      aprendiz.Participar(this);
+    }
 
 }
