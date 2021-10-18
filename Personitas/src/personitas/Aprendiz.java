@@ -11,15 +11,15 @@ package personitas;
 public interface Aprendiz
 {
   //Los métodos que va a usar la clase alumno
-  public void Saludar();//Pude saludar tanto al docente como a una autoridad
-  public void Preguntar();//Le pregunta al docente
-  public void Responder();//Le responde al docente
-  public void Participar();//Participa con el docente
-  public void Escuchar();//Escucha al docente
-  public void Despedirse();//Se despide del docente
+  public void Saludar(Contribuyente contribuyente);//Pude saludar tanto al docente como a una autoridad
+  public void Preguntar(Docente docente);//Le pregunta al docente
+  public void Responder(Docente docente);//Le responde al docente
+  public void Participar(Docente docente);//Participa con el docente
+  public void Escuchar(Docente docente);//Escucha al docente
+  public void Despedirse(Contribuyente contribuyente);//Se despide de la autoridad o docente
   public void Agradecer();
-  public void Ventanilla();
-  public void ResponderV();
+  public void Ventanilla(Autoridad autoridad);//Pregunta a ventanilla
+  public void ResponderV(Autoridad autoridad);//Responde a ventanilla
   //Por lo que vamos a tener que usar la interfaz de docente y autoridad
   //para poder llamarlas dentro del método de alumno y estas a su ves pueden llamar
   //a un método de alumno
