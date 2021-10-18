@@ -38,42 +38,47 @@ public class Autoridad extends Persona implements Contribuyente
     @Override
     public void Saludar()
     {
-
-    }
-
-    @Override
-    public void Instruye(Alumno alumno)
-    {
-
+      System.out.println("La autoridad saluda");
     }
 
     @Override
     public void Despedida()
     {
-
+      System.out.println("La autoridad se despide");
     }
 
     @Override
     public void Interactua()
     {
-
+      System.out.println("La autoridad interactua con sus archivos");
     }
 
     @Override
-    public void Contestar(Alumno alumno)
+    public void Agradecer()
     {
-
-    }
-
-    @Override
-    public void Agradecer(Alumno alumno)
-    {
-
+      System.out.println("La autoridad agradece");
     }
 
     @Override
     public void Trabajar()
     {
+      System.out.println("El docente trabaja");
+    }
+    @Override
+    public void Ventanilla(Aprendiz aprendiz)
+    {
+      System.out.println("Ventanilla le contesta amablemente :)");
+      System.out.println("Chingas tu madre, chingas a toda tu pvta madre de ti");
+      aprendiz.Agradecer(this);
+    }
+
+    @Override
+    public void Instruye(Aprendiz aprendiz) {
+
+    }
+
+    @Override
+    public void Contestar(Aprendiz aprendiz) {
 
     }
 
