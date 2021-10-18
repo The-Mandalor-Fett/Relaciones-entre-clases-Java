@@ -34,4 +34,47 @@ public class Autoridad extends Persona implements Contribuyente
   {
     System.out.println("La autoridad dice: Miren los nuevos lineamiento para regresar");
   }
+
+    @Override
+    public void Saludar()
+    {
+
+    }
+
+    @Override
+    public void Instruye(Alumno alumno)
+    {
+
+    }
+
+    @Override
+    public void Despedida()
+    {
+
+    }
+
+    @Override
+    public void Interactua()
+    {
+
+    }
+
+    @Override
+    public void Contestar(Alumno alumno)
+    {
+
+    }
+
+    @Override
+    public void Agradecer(Alumno alumno)
+    {
+
+    }
+
+    @Override
+    public void Trabajar()
+    {
+
+    }
+
 }

@@ -42,25 +42,25 @@ public class Alumno extends Persona implements Aprendiz
   }
 
     @Override
-    public void Saludar()
+    public void Saludar(Contribuyente contribuyente)
     {
 
     }
 
     @Override
-    public void Preguntar()
+    public void Preguntar(Docente docente)
     {
 
     }
 
     @Override
-    public void Responder()
+    public void Responder(Docente docente)
     {
 
     }
 
     @Override
-    public void Participar()
+    public void Participar(Docente docente)
     {
 
     }
@@ -72,7 +72,7 @@ public class Alumno extends Persona implements Aprendiz
     }
 
     @Override
-    public void Despedirse()
+    public void Despedirse(Contribuyente contribuyente)
     {
 
     }
@@ -84,15 +84,17 @@ public class Alumno extends Persona implements Aprendiz
     }
 
     @Override
-    public void Ventanilla()
+    public void Ventanilla(Autoridad autoridad)
     {
 
     }
 
     @Override
-    public void ResponderV()
+    public void ResponderV(Autoridad autoridad)
     {
 
     }
+
+
 
 }

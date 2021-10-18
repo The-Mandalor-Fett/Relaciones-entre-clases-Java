@@ -16,7 +16,7 @@ public class Docente extends Persona implements Contribuyente
   private int ident;
   public Docente(String nombre,int edad, String sexo, String correo,String area,String cargo, int ident)
   {
-    super(nombre,edad,sexo);
+    super(nombre,edad,sexo,correo);
     this.area = area;
     this.cargo = cargo;
     this.ident = ident;
@@ -26,8 +26,9 @@ public class Docente extends Persona implements Contribuyente
   {
     System.out.println("La personita es un docente");
     super.showData();//imprime los datos de la super clase
-    System.out.println("Area: "+ this.Area);//Datos de la clase alumno
-    System.out.println("ID: "+ this.IDen);
+    System.out.println("Area: "+ this.area);//Datos de la clase alumno
+    System.out.println("Cargo: "+ this.cargo);
+    System.out.println("ID: "+ this.ident);
   }
   @Override
   protected void hablar()
@@ -42,7 +43,7 @@ public class Docente extends Persona implements Contribuyente
     }
 
     @Override
-    public void Instruye()
+    public void Instruye(Alumno alumno)
     {
 
     }
@@ -60,13 +61,13 @@ public class Docente extends Persona implements Contribuyente
     }
 
     @Override
-    public void Contestar()
+    public void Contestar(Alumno alumno)
     {
 
     }
 
     @Override
-    public void Agradecer()
+    public void Agradecer(Alumno alumno)
     {
 
     }
@@ -77,10 +78,5 @@ public class Docente extends Persona implements Contribuyente
 
     }
 
-    @Override
-    public void VentanillaR()
-    {
-
-    }
 
 }
