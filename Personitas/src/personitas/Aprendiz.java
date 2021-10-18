@@ -15,9 +15,9 @@ public interface Aprendiz
   public void Preguntar(Docente docente);//Le pregunta al docente
   public void Responder(Docente docente);//Le responde al docente
   public void Participar(Docente docente);//Participa con el docente
-  public void Escuchar(Docente docente);//Escucha al docente
+  public void Escuchar();//Escucha al docente
   public void Despedirse(Contribuyente contribuyente);//Se despide de la autoridad o docente
-  public void Agradecer();
+  public void Agradecer();//Agradece la respuesta
   public void Ventanilla(Autoridad autoridad);//Pregunta a ventanilla
   public void ResponderV(Autoridad autoridad);//Responde a ventanilla
   //Por lo que vamos a tener que usar la interfaz de docente y autoridad
