@@ -94,6 +94,10 @@ public class Alumno extends Persona implements Aprendiz
     public void Agradecer(Contribuyente Contribuyente) {
         System.out.println("El alumno agradece");
     }
+    public void Caminar()
+    {
+      System.out.println("El alumno camina a la escuela");
+    }
 
 
 

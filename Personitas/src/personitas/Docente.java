@@ -88,7 +88,11 @@ public class Docente extends Persona implements Contribuyente
 
     @Override
     public void Ventanilla(Aprendiz aprendiz) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+    }
+    public void Caminar()
+    {
+      System.out.println("El docente camina al trabajo");
     }
 
 }

@@ -81,5 +81,8 @@ public class Autoridad extends Persona implements Contribuyente
     public void Contestar(Aprendiz aprendiz) {
 
     }
-
+    public void Caminar()
+    {
+      System.out.println("La autoridad camina al trabajo");
+    }
 }
