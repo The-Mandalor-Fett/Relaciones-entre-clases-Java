@@ -44,13 +44,16 @@ public class Alumno extends Persona implements Aprendiz
     @Override
     public void Saludar(Contribuyente contribuyente)
     {
-
+      System.out.println("El alumno saluda");
+      contribuyente.Saludar();
     }
 
     @Override
     public void Preguntar(Docente docente)
     {
-
+      System.out.println("El alumno pregunta algo");
+      docente.Contestar(this);
+      //Parémetro que permite apuntar a un método en particular
     }
 
     @Override
@@ -62,39 +65,37 @@ public class Alumno extends Persona implements Aprendiz
     @Override
     public void Participar(Docente docente)
     {
-
+      System.out.println("El alumno responde");
+      docente.Agradecer();
     }
 
     @Override
     public void Escuchar()
     {
-
+      System.out.println("El alumno escucha la clase y toma notas");
     }
 
     @Override
     public void Despedirse(Contribuyente contribuyente)
     {
-
+      System.out.println("El alumno se despide");
+      contribuyente.Despedida();
     }
 
     @Override
     public void Agradecer()
     {
-
+      System.out.println("El alumno agradece por la respuesta");
     }
 
     @Override
     public void Ventanilla(Autoridad autoridad)
     {
-
+      System.out.println("El alumno pregunta algo a ventanilla");
+      autoridad.Ventanilla(this);
     }
 
-    @Override
-    public void ResponderV(Autoridad autoridad)
-    {
-
-    }
-
+  
 
 
 }
