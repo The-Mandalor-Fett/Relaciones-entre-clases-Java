@@ -52,14 +52,15 @@ public class Alumno extends Persona implements Aprendiz
     public void Preguntar(Docente docente)
     {
       System.out.println("El alumno pregunta algo");
-      docente.Contestar(this);
+      docente.Contestar(this);//llamamos desde aqui a responder
       //Parémetro que permite apuntar a un método en particular
     }
 
     @Override
     public void Responder(Docente docente)
     {
-
+      System.out.println("El alumno responde la pregunta del profesor");
+      docente.Agradecer();
     }
 
     @Override
@@ -83,19 +84,18 @@ public class Alumno extends Persona implements Aprendiz
     }
 
     @Override
-    public void Agradecer()
-    {
-      System.out.println("El alumno agradece por la respuesta");
-    }
-
-    @Override
     public void Ventanilla(Autoridad autoridad)
     {
       System.out.println("El alumno pregunta algo a ventanilla");
       autoridad.Ventanilla(this);
     }
 
-  
+    @Override
+    public void Agradecer(Contribuyente Contribuyente) {
+        System.out.println("El alumno agradece");
+    }
+
+
 
 
 }

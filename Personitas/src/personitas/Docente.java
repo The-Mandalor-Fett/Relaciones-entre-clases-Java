@@ -65,7 +65,7 @@ public class Docente extends Persona implements Contribuyente
     public void Contestar(Aprendiz aprendiz)
     {
       System.out.println("El docente contesta la pregunta del alumno");
-      aprendiz.Agradece();
+      aprendiz.Agradecer(this);
     }
 
     @Override
@@ -84,6 +84,11 @@ public class Docente extends Persona implements Contribuyente
     {
       System.out.println("El profesor pregunta algo relacionado con el tema");
       aprendiz.Participar(this);
+    }
+
+    @Override
+    public void Ventanilla(Aprendiz aprendiz) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
